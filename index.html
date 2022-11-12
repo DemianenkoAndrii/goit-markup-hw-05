@@ -63,11 +63,12 @@
     </header>
 
     <main class="main">
+
       <!-- Секція hero -->
       <section class="section-hero overlay">
         <div class="container">
           <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-hero" type="button">Замовити послугу</button>
+          <button data-modal-open class="button-hero animate__animated animate__zoomIn" type="button">Замовити послугу</button>
         </div>
       </section>
 
@@ -138,6 +139,7 @@
                 alt="набір на клавіатурі за планшетом"
                 width="370"
               />
+              <p class="text-about">ДЕСКТОПНІ ДОДАТКИ</p>
             </li>
             <li class="about">
               <img
@@ -145,6 +147,7 @@
                 alt="смартфон в руках та розробка мобільних версій"
                 width="370"
               />
+              <p class="text-about">МОБІЛЬНІ ДОДАТКИ</p>
             </li>
             <li class="about">
               <img
@@ -152,6 +155,7 @@
                 alt="кольорова гамма в планшеті"
                 width="370"
               />
+              <p class="text-about">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
             </li>
           </ul>
         </div>
@@ -584,5 +588,18 @@
         </div>
       </div>
     </footer>
+
+    <!--модальне вікно-->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close aria-label="закрити" class="exit" type="button">
+          <svg width="11" height="11" class="">
+            <use href="./sprite.svg#icon-exit"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
